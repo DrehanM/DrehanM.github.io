@@ -1,0 +1,51 @@
+
+#title {
+    text-align: center;
+}
+
+div.box {
+    width: 300px;
+    height: 300px;
+    border: 5px;
+    padding: 25px;
+}
+
+#prof-box {
+    background: linear-gradient(135deg, white 0%,  #B5FFFA 100%, #B5FFFA 100%);
+    float: left;
+    margin-left: 25px;
+    margin-right: 2px;
+    margin-top: 25px;
+    margin-bottom: 2px;
+}
+#proj-box {
+    background: linear-gradient(45deg, #B5FFFA 0%, white 100%,  #B5FFFA 100%);
+    float: right;
+    margin-left: 2px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 2px;
+}
+
+#blog-box {
+    background: linear-gradient(45deg, white 0%,  #B5FFFA 100%, #B5FFFA 100%);
+    float: left;
+    margin-left: 25px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 25px;
+}
+
+#link-box {
+    background: linear-gradient(135deg, #B5FFFA 0%, white 100%,  #B5FFFA 100%);
+    float: right;
+    margin-left: 2px;
+    margin-right: 25px;
+    margin-top: 2px;
+    margin-bottom: 25px;
+}
+
+.prof-wrapper {
+    background-image: url('../img/me.png');
+    background-repeat: no-repeat;
+}
