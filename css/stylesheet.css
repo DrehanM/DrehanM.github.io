@@ -1,48 +1,76 @@
 
+body {
+    background: black;
+    color: white;
+}
+
+#wrapper {
+    width:555px; 
+    margin:0 auto;
+}
+
+img.photo {
+    display: inline;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+img#me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #title {
     text-align: center;
 }
 
+
 div.box {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border: 5px;
     padding: 25px;
+    color: black;
+    text-align: center;
 }
 
 #prof-box {
     background: linear-gradient(135deg, white 0%,  #B5FFFA 100%, #B5FFFA 100%);
-    float: left;
     margin-left: 25px;
     margin-right: 2px;
     margin-top: 25px;
     margin-bottom: 2px;
+    float: left;
 }
 #proj-box {
     background: linear-gradient(45deg, #B5FFFA 0%, white 100%,  #B5FFFA 100%);
-    float: right;
     margin-left: 2px;
     margin-right: 25px;
     margin-top: 25px;
     margin-bottom: 2px;
+    float: right;
+
 }
 
 #blog-box {
     background: linear-gradient(45deg, white 0%,  #B5FFFA 100%, #B5FFFA 100%);
-    float: left;
     margin-left: 25px;
     margin-right: 2px;
     margin-top: 2px;
     margin-bottom: 25px;
+    float: left;
 }
 
 #link-box {
     background: linear-gradient(135deg, #B5FFFA 0%, white 100%,  #B5FFFA 100%);
-    float: right;
     margin-left: 2px;
     margin-right: 25px;
     margin-top: 2px;
     margin-bottom: 25px;
+    float: right;
 }
 
 .prof-wrapper {
