@@ -21,32 +21,119 @@
         </ul>
     </nav>
     <div class="content-wrapper">
-        <div id="iris" class="proj">
-          <h3>Designing Software for NASA's Infrared Photonics Group</h3>
-          <p>
-            This past summer, I had the humbling opportunity to work with some of the most intelligent
-            people I have met, NASA's Group 389G, the Infrared Photonics Group. Their task for me was
-            to create a simple script to handle data processing of current-voltage curves, information that
-            would be used to quanitfy the quality of their proprietary infrared photodetectors. I instead 
-            opted to make IRIS (Infrared Informatics Software), a full-scale desktop application designed
-            to create maximum abstraction between the code and the researcher.
-          </p>
+      <div id="iris" class="proj">
+        <button class="collapsible">Designing Software for NASA's Infrared Photonics Group</button>
+        <div class="content">
+          <div class="column">
+            <p>
+              This past summer, I had the opportunity to work as an intern for NASA's Group 389G, 
+              the Infrared Photonics Group. Their task for me was to create a simple script to handle data 
+              processing of current-voltage curves, information that would be used to quanitfy the quality 
+              of their proprietary infrared photodetectors. I instead opted to make IRIS (Infrared Informatics 
+              Software), a full-scale desktop application designed to create maximum abstraction between the 
+              code and the researcher.
+            </p>
+          </div>
+          <div class="column">
+            <p>Other stuff</p>
+          </div>
         </div>
-        <div id="timesheet" class="proj">
-          <h3>Timesheet: Proactive and Reactive Task Management</h3>
+      </div>
+
+      <div id="lyreq" class="proj">
+        <button class="collapsible">LyReq: Your Favorite Song Visualized</button>
+        <div class="content">
+          <div class="column">
+            <p>
+              This past summer, I had the opportunity to work as an intern for NASA's Group 389G, 
+              the Infrared Photonics Group. Their task for me was to create a simple script to handle data 
+              processing of current-voltage curves, information that would be used to quanitfy the quality 
+              of their proprietary infrared photodetectors. I instead opted to make IRIS (Infrared Informatics 
+              Software), a full-scale desktop application designed to create maximum abstraction between the 
+              code and the researcher.
+            </p>
+          </div>
+          <div class="column">
+            <p>Other stuff</p>
+          </div>
         </div>
-        <div id="lyreq" class="proj">
-            <h3>LyReq: Your Favorite Song Visualized</h3>
+      </div>
+
+      <div id="cpu" class="proj">
+        <button class="collapsible">Designing a 5-Stage Pipelined CPU</button>
+        <div class="content">
+          <div class="column">
+            <p>
+              This past summer, I had the opportunity to work as an intern for NASA's Group 389G, 
+              the Infrared Photonics Group. Their task for me was to create a simple script to handle data 
+              processing of current-voltage curves, information that would be used to quanitfy the quality 
+              of their proprietary infrared photodetectors. I instead opted to make IRIS (Infrared Informatics 
+              Software), a full-scale desktop application designed to create maximum abstraction between the 
+              code and the researcher.
+            </p>
+          </div>
+          <div class="column">
+            <p>Other stuff</p>
+          </div>
         </div>
-        <div id="CPU" class="proj">
-            <h3>Designing a 5-Stage Pipelined CPU</h3>
+      </div>
+
+      <div id="gitlet" class="proj">
+        <button class="collapsible">Unpacking Git Version Control with Gitlet</button>
+        <div class="content">
+          <div class="column">
+            <p>
+              This past summer, I had the opportunity to work as an intern for NASA's Group 389G, 
+              the Infrared Photonics Group. Their task for me was to create a simple script to handle data 
+              processing of current-voltage curves, information that would be used to quanitfy the quality 
+              of their proprietary infrared photodetectors. I instead opted to make IRIS (Infrared Informatics 
+              Software), a full-scale desktop application designed to create maximum abstraction between the 
+              code and the researcher.
+            </p>
+          </div>
+          <div class="column">
+            <p>Other stuff</p>
+          </div>
         </div>
-        <div id="gitlet" class="proj">
-            <h3>Unpacking Git with Gitlet</h3>
+      </div>
+
+      <div id="rom" class="proj">
+        <button class="collapsible">Occupancy Monitoring for Less</button>
+        <div class="content">
+          <div class="column">
+            <p>
+              This past summer, I had the opportunity to work as an intern for NASA's Group 389G, 
+              the Infrared Photonics Group. Their task for me was to create a simple script to handle data 
+              processing of current-voltage curves, information that would be used to quanitfy the quality 
+              of their proprietary infrared photodetectors. I instead opted to make IRIS (Infrared Informatics 
+              Software), a full-scale desktop application designed to create maximum abstraction between the 
+              code and the researcher.
+            </p>
+          </div>
+          <div class="column">
+            <p>Other stuff</p>
+          </div>
         </div>
-        <div id="ROM" class="proj">
-            <h3>Room Occupancy Monitoring for Less</h3>
-        </div>
+      </div>
     </div>
   </body>
+
+  <script>
+    // Collapsible
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      });
+    }
+  
+  </script>
 </html>

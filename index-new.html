@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge","chrome=1">
+        <title>Dre Mahaarachchi</title>
+        <link rel="stylesheet" href="css/home-new.css">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="wrapper-info">
+            </div>
+            <div id="wrapper-terminal">
+                <div id="topbar">
+                    <div class="bar-buttons" id="close"></div>
+                    <div class="bar-buttons" id="minimize"></div>
+                    <div class="bar-buttons" id="zoom"></div>
+                </div>
+                <div id="terminal">
+                    <span class="input" id="1">>>> </span>
+                    <div id="typed-name" class="terminal_text">
+                        <p>drehan.get_info()</p>
+                    </div>
+                    <span id="typedout-name"></span>
+                    <span class="output" id="name"><br>
+                        {<br>
+                            'name': 'Dre Mahaarachchi'<br>
+                            'education': 'UC Berkeley -- 3rd yr'<br>
+                            'major': 'Electrical Engineering & Computer Science'<br>
+                        }
+                            </span>
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var typed_name = new Typed('#typedout-name', {
+            stringsElement: '#typed-name',
+            typeSpeed: 100,
+            cursorChar: ''
+        });
+
+    </script>
+</html>
