@@ -1,6 +1,11 @@
 body {
-    background-color: #F2F1F4;
-    padding: 10px;
+    background-image: url("../img/pattern.jpg");
+    background-repeat: repeat;
+    padding: 50px;
+}
+
+#main {
+    margin: auto;
 }
 
 #topbar {
@@ -11,6 +16,9 @@ body {
     margin: 0 auto;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
 }
 
 .bar-buttons {
@@ -130,12 +138,12 @@ span {
 }
 
 .string {
-    color: #47A2B5
+    color: #A2E3C4;
 }
 
 a {
     text-decoration: none;
-    color: #47b591;
+    color: #ffa35d;
 }
 
 a:hover {
@@ -179,6 +187,87 @@ a:hover {
     margin-left: 20px;
 }
 
-.typed-cursor.typed_name {
-    color: red;
+#wrapper-header {
+    width: 650px;
+    height: 270px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    opacity: 0;
+    -webkit-animation: fadein 1s ease 7.3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s ease 7.3s; /* Firefox < 16 */
+        -ms-animation: fadein 1s ease 7.3s; /* Internet Explorer */
+         -o-animation: fadein 1s ease 7.3s; /* Opera < 12.1 */
+            animation: fadein 1s ease 7.3s;
+            animation-fill-mode: forwards;
+}
+
+#img-container {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    float: left;
+}
+
+#name-container {
+    width: 410px;
+    height: 200px;
+    padding: 10px;
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#name-container h1 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 45px;
+    text-align: right;
+    color: #272A3E;
+}
+
+img#me {
+    margin: 10px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+#links-container {
+    width: 650px;
+    height: 50px;
+    padding-top: 200px;
+}
+
+
+
+#link-list {
+    list-style-type: none;
+    display: inline;
+    float: right;
+    margin-top: 5px;
+}
+
+#link-list li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 50px;
+}
+
+.fa {
+	color:#959595;
+} .fa-linkedin:hover {
+	color: #5695b6;
+} .fa-github:hover {
+	color: #474747;
+} .fa-stack-overflow:hover {
+	color: #ffa35d;
+} .fa-file-pdf-o:hover {
+	color: #de5959;
+} .fa-spotify:hover {
+	color: #3fb563;
 }

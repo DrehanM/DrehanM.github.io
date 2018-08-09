@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge","chrome=1">
         <title>Dre Mahaarachchi</title>
         <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     </head>
     <body>
@@ -55,10 +56,9 @@
                         {<br>
                             <span>    </span>'<span class="string">Summer 2018</span>': '<span class="string">Software Engineering Intern @ JPL</span>',
                             <br>
-                            <span>    </span>'<span class="string">Spring 2018</span>': ['<span class="string">Apprentice @ Rhew Lab</span>'
-                                                                                        ,'<span class="string">Lab TA @ EECS</span>'],
+                            <span>    </span>'<span class="string">Spring 2018</span>': ['<span class="string">Apprentice @ Rhew Lab</span>', '<span class="string">Lab TA @ EECS</span>'],
                             <br>
-                            <span>    </span>'<span class="string">Summer 2017</span>': '<span class="string">Software Engineering Intern @ UBremen</span>'
+                            <span>    </span>'<span class="string">Summer 2017</span>': '<span class="string">Software Engineering Intern @ Comnets - UBremen</span>'
                             <br>
                         }
                         <br>
@@ -88,13 +88,47 @@
                             </span>
 
                     <span class="arrows" id="line5">>>> </span>
+                    <div id="typed-last" class="terminal_text">
+                            <p>dre.get_header()</p>
+                    </div>
+                    <span id="typedout-last"></span>
+
                 </div>
             </div>
             <!-- TODO -->
             <div id="wrapper-header">
                 <div id="img-container">
+                    <img id="me" src="img/me3.png">
                 </div>
                 <div id="name-container">
+                    <h1>Dre Mahaarachchi</h1>
+                    <ul id="link-list">
+                        <li>
+                            <a href=https://github.com/DrehanM>
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=https://www.linkedin.com/in/dre-mahaarachchi-a66439bb/>
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=https://open.spotify.com/user/drehanm?si=gOuUAS96R_qtbL4deu7YVw>
+                                <i class="fa fa-spotify"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=https://stackoverflow.com/users/10204291/dre-mahaarachchi>
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=files/resume.pdf>
+                                <i class="fa fa-file-pdf-o"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div id="links-container">
                 </div>
@@ -135,6 +169,13 @@
         var typed_contact = new Typed('#typedout-contact', {
             startDelay: 4900,
             stringsElement: "#typed-contact",
+            typeSpeed: 50,
+            cursorChar: '',
+        })
+
+        var typed_last = new Typed('#typedout-last', {
+            startDelay: 6100,
+            stringsElement: "#typed-last",
             typeSpeed: 50,
             cursorChar: '',
         })
