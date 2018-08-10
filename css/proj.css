@@ -1,0 +1,52 @@
+#topbar{
+    width: 1200px;
+}
+
+#terminal {
+    width: 1200px;
+}
+
+#bar-title {
+    left: 460px;
+}
+
+.proj {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 5px;
+    padding: 10px;
+}
+
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.collapsible {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: inherit;
+    color: #A2E3C4;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.plus {
+    float: right;
+}
+
+.active, .collapsible:hover {
+    color: #ffa35d;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+

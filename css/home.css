@@ -4,14 +4,10 @@ body {
     padding: 50px;
 }
 
-#main {
-    margin: auto;
-}
-
 #topbar {
     width: 650px;
-    box-sizing: border-box;
     height: 25px;
+    box-sizing: border-box;
     background-color: #bbb;
     margin: 0 auto;
     border-top-right-radius: 5px;
@@ -229,6 +225,7 @@ a:hover {
 
 img#me {
     margin: 10px;
+    margin-left: 20px;
     width: 200px;
     overflow: hidden;
     border-radius: 50%;
