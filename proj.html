@@ -21,20 +21,40 @@
                 </div>
                 <div id="terminal">
                     <div id="iris" class="proj">
-                        <button class="collapsible">Designing Software for NASA's Infrared Photonics Group<span class="plus">[+]</span></button>
+                        <button class="collapsible" onclick="">Designing Software for NASA's Infrared Photonics Group<span class="plus">[+]</span></button>
                         <div class="content">
                             <div class="column">
                             <p>
-                                This past summer, I had the opportunity to work as an intern for NASA's Group 389G, 
-                                the Infrared Photonics Group. Their task for me was to create a simple script to handle data 
-                                processing of current-voltage curves, information that would be used to quanitfy the quality 
-                                of their proprietary infrared photodetectors. I instead opted to make IRIS (Infrared Informatics 
-                                Software), a full-scale desktop application designed to create maximum abstraction between the 
-                                code and the researcher.
+                                This past summer, I had the opportunity to work as an intern for NASA JPL's Group 389G, the <a href=https://microdevices.jpl.nasa.gov/news/news-infrared-detector.php>Infrared Photonics Group</a>. 
+                                Their task for me was to create a script to handle data processing of current-voltage curves, information that would be used to quanitfy the quality of their proprietary infrared photodetectors. 
+                                I instead opted to make IRIS (Infrared Informatics Software), a full-scale desktop application designed to create maximum abstraction between the code and the researcher.<br>
+                                
+                                <h2>Description</h2>
+                                IRIS is first and foremost a data analytics application. 
+                                Two-thirds of the UI is a graphing widget that is designed to depict the processed data elegantly and clearly. 
+                                The graphing widget also allows precise zoomin and traversal. 
+                                IRIS takes in selected raw data files that depict the <a href=https://en.wikipedia.org/wiki/Dark_current_(physics)>dark current</a> response oftested photodetectors at near absolute zero temperatures and between operating voltages of -1.5 and +1.5 Volts.
+                                The user then has the option to filter the data according to user-defined values. 
+                                Once the "Generate Analysis" button is clicked, the data will be processed within one to two seconds and plotted to the graphing widget. 
+                                There are 3 buttons and a photodetector selection list to allow the user to select what plot type, temperature, and voltage to view the processed IV data of the selected devices. 
+                                There are 10 plot types that each uniquely process the raw data. 
+                                The user can quickly traverse plot types at the click of a button. 
+                                All of the plots can be downloaded as formatted CSV files.<br>
+
+                                <h2>Accomplishments</h2>
+                                Prior to my arrival, 389G faced the dilemma of having to spend laborous time curating and processing data files
+                                with a closed-source data analytics platform. The group was only allowed one license to this application, so curating
+                                was primarily my mentor's job. 
+                                Thus, IRIS was designed to allow group-wide access to the processed data and automation of data processing. The original
+                                specifications for my task was just to create the processing automation script. I chose to create a full-scale
+                                application that made the processed data accessible to the whole group (and anyone else who uses the application).<br><br>
+
+                                I also ensured that the code remained heavily documented and easily scalable such that IRIS can provide more views
+                                for the data that Group 389G researches. You can read the usage and development guide I created for IRIS <a href=files/IRISManual.pdf>here</a>.
                             </p>
                             </div>
                             <div class="column">
-                            <p>Other stuff</p>
+                            <p></p>
                             </div>
                         </div>
                         </div>
@@ -44,12 +64,15 @@
                         <div class="content">
                             <div class="column">
                             <p>
-                                This past summer, I had the opportunity to work as an intern for NASA's Group 389G, 
-                                the Infrared Photonics Group. Their task for me was to create a simple script to handle data 
-                                processing of current-voltage curves, information that would be used to quanitfy the quality 
-                                of their proprietary infrared photodetectors. I instead opted to make IRIS (Infrared Informatics 
-                                Software), a full-scale desktop application designed to create maximum abstraction between the 
-                                code and the researcher.
+                                LyReq is a lyrical analysis program I made to fetch a specific song's lyrics from <a href=https://genius.com/>Genius.com</a>
+                                and depict the song's lyrical repetetiveness, which was inspired by an algorithm called <a href=https://www.informationisbeautifulawards.com/showcase/1777-songsim>SongSim</a>.
+                                
+                                <h2>Description</h2>
+                                Written in Python, the program operates on a command line prompt, requesting an artist name and song from the user.
+                                If the artist and accompanying song exist in the Genius database, the script will scrape the HTML on the appropriate Genius webpage, returning a
+                                list of words under the "lyrics" class in the markup. This list will be further parsed to find which words are repeated in the song. This will be 
+                                represented by a square matrix where the x and y axis list the lyrics by word. An entry will contain a "True" value if its x and y indices contain
+                                the same word. LyReq will create a .png file depicting the repetition pattern, where a red pixel denotes a "True" value.
                             </p>
                             </div>
                             <div class="column">
@@ -63,12 +86,13 @@
                         <div class="content">
                             <div class="column">
                             <p>
-                                This past summer, I had the opportunity to work as an intern for NASA's Group 389G, 
-                                the Infrared Photonics Group. Their task for me was to create a simple script to handle data 
-                                processing of current-voltage curves, information that would be used to quanitfy the quality 
-                                of their proprietary infrared photodetectors. I instead opted to make IRIS (Infrared Informatics 
-                                Software), a full-scale desktop application designed to create maximum abstraction between the 
-                                code and the researcher.
+                                I took my Intro to Computer Architecture course in Spring 2018. The main design assignment was to design a single-core, 5-stage pipelined CPU that runs
+                                <a href=https://en.wikipedia.org/wiki/RISC-V>RISC-V</a> 32-bit architecture on Logisim, an app for circuit design. The 
+                                skeleton code only came with a harness to test the CPU, so the final design of the device was completely up to each student's discretion. Project success 
+                                was determined by how may unqiue instructions the CPU correctly processed and executed.
+
+                                <h2>Description</h2>
+
                             </p>
                             </div>
                             <div class="column">
@@ -82,12 +106,11 @@
                         <div class="content">
                             <div class="column">
                             <p>
-                                This past summer, I had the opportunity to work as an intern for NASA's Group 389G, 
-                                the Infrared Photonics Group. Their task for me was to create a simple script to handle data 
-                                processing of current-voltage curves, information that would be used to quanitfy the quality 
-                                of their proprietary infrared photodetectors. I instead opted to make IRIS (Infrared Informatics 
-                                Software), a full-scale desktop application designed to create maximum abstraction between the 
-                                code and the researcher.
+                                For the final design project for my Data Structures class (taken in Fall 2017), I created Gitlet, a version control system that contains a subset of 
+                                Git's commands and functionality. The entire project was developed in Java from scratch.
+
+                                <h2>Description</h2>
+
                             </p>
                             </div>
                             <div class="column">
@@ -101,12 +124,27 @@
                         <div class="content">
                             <div class="column">
                             <p>
-                                This past summer, I had the opportunity to work as an intern for NASA's Group 389G, 
-                                the Infrared Photonics Group. Their task for me was to create a simple script to handle data 
-                                processing of current-voltage curves, information that would be used to quanitfy the quality 
-                                of their proprietary infrared photodetectors. I instead opted to make IRIS (Infrared Informatics 
-                                Software), a full-scale desktop application designed to create maximum abstraction between the 
-                                code and the researcher.
+                                During the summer of 2017, I was accepted into a research internship program in the <a href=https://www.comnets.uni-bremen.de/start/>ComNets</a> group at the University of Bremen in Germany.
+                                Here, I had the task of creating a device that could monitor the number of people in a room and report this data to a server where the information
+                                could be accessed remotely and by any individuals on the same network. Using an Arduino Nano with an ESP266 WiFi module, some infrared sensors, and bit of Python
+                                networking, I created the Room Occupancy Monitor (ROM for short).
+
+                                <h2>Description</h2>
+                                ROM is physcially constructed with a Pretzel Board, a device that combines Arduino Nano hardware with the ESP266 WiFi attachment. It is about 4 inches
+                                in length. Attached to the board are two line-of-sight infrared signal transmitter/receivers that outputs a signal based on the intensity of the infrared
+                                reflected back to the device. The programming of the device was completed in the Arduino IDE. The general logic is as follows:<br><br>
+                                <b>Setup:</b><br> <li>Calibrate the intensity of the reflected signal for the two infrared sensors. This will be the baseline signal. Any spike in value denotes that a
+                                person has passed line-of-sight, triggering an increase in reflection. The spike must be significant to register an "entry" or "exit".</li>
+                                <li> Establish the connection to the LAN in order to communicate with the host server that contains the Python socket script.</li><br>
+                                <b>Mainloop:</b><br>
+                                <li>Both sensors are attached to the doorway, one inside the room and one outside. Depending on which sensor is tripped first, the device will
+                                    log an "entry" or "exit".</li>
+                                <li>Every five seconds, report the current occupancy of the room to the Python socket over UDP connection.</li><br>
+
+                                <h2>Accomplishments</h2>
+                                Most occupancy monitors on the commerical market are priced well over $150. ROM costs just $30 in total hardware cost.
+                                I built ROM with the intention to minimize cost and complexity. In fact, the hardware for the device is composed of the Pretzel Board, two infrared sensors,
+                                and two resistors for the sensors. Despite this, the device works up to specifications, accurately reporting occupancy of the room it is placed in.
                             </p>
                             </div>
                             <div class="column">
@@ -120,7 +158,6 @@
 
     <script>
         var coll = document.getElementsByClassName("collapsible");
-        var i;
 
         for (i = 0; i < coll.length; i++) {
             coll[i].addEventListener("click", function() {
@@ -133,5 +170,6 @@
             }
             });
         }
+
     </script>
 </html>

@@ -1,9 +1,9 @@
 #topbar{
-    width: 1200px;
+    width: 1000px;
 }
 
 #terminal {
-    width: 1200px;
+    width: 1000px;
 }
 
 #bar-title {
@@ -19,10 +19,13 @@
 
 
 .content {
-    padding: 0 18px;
+    padding: 0;
     display: none;
     overflow: hidden;
+    hyphens: auto;
+    text-align: justify;
 }
+
 
 .collapsible {
     font-family: 'Courier New', Courier, monospace;
@@ -37,16 +40,19 @@
     font-size: 15px;
 }
 
+
 .plus {
     float: right;
 }
 
 .active, .collapsible:hover {
     color: #ffa35d;
+    
 }
 
 .column {
     flex: 50%;
     padding: 10px;
+    color: white;
 }
 
