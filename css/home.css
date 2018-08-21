@@ -234,25 +234,28 @@ img#me {
     border-color: black;
 }
 
-#links-container {
-    width: 650px;
-    height: 50px;
-    padding-top: 200px;
-}
-
-
 
 #link-list {
     list-style-type: none;
     display: inline;
     float: right;
     margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 #link-list li {
     display: inline-block;
     padding: 5px;
     font-size: 50px;
+}
+
+#links-container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: right;
+}
+
+#links-container a {
+    color: black;
 }
 
 .fa {
