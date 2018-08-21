@@ -23,43 +23,61 @@
                     <div id="iris" class="proj">
                         <button class="collapsible" onclick="">Designing Software for NASA's Infrared Photonics Group<span class="plus">[+]</span></button>
                         <div class="content">
-                            <div class="column">
-                            <p>
-                                This past summer, I had the opportunity to work as an intern for NASA JPL's Group 389G, the <a href=https://microdevices.jpl.nasa.gov/news/news-infrared-detector.php>Infrared Photonics Group</a>. 
-                                Their task for me was to create a script to handle data processing of current-voltage curves, information that would be used to quanitfy the quality of their proprietary infrared photodetectors. 
-                                I instead opted to make IRIS (Infrared Informatics Software), a full-scale desktop application designed to create maximum abstraction between the code and the researcher.<br>
-                                
-                                <h2>Description</h2>
-                                IRIS is first and foremost a data analytics application. 
-                                Two-thirds of the UI is a graphing widget that is designed to depict the processed data elegantly and clearly. 
-                                The graphing widget also allows precise zoomin and traversal. 
-                                IRIS takes in selected raw data files that depict the <a href=https://en.wikipedia.org/wiki/Dark_current_(physics)>dark current</a> response oftested photodetectors at near absolute zero temperatures and between operating voltages of -1.5 and +1.5 Volts.
-                                The user then has the option to filter the data according to user-defined values. 
-                                Once the "Generate Analysis" button is clicked, the data will be processed within one to two seconds and plotted to the graphing widget. 
-                                There are 3 buttons and a photodetector selection list to allow the user to select what plot type, temperature, and voltage to view the processed IV data of the selected devices. 
-                                There are 10 plot types that each uniquely process the raw data. 
-                                The user can quickly traverse plot types at the click of a button. 
-                                All of the plots can be downloaded as formatted CSV files.<br>
-
-                                <h2>Accomplishments</h2>
-                                Prior to my arrival, 389G faced the dilemma of having to spend laborous time curating and processing data files
-                                with a closed-source data analytics platform. The group was only allowed one license to this application, so curating
-                                was primarily my mentor's job. 
-                                Thus, IRIS was designed to allow group-wide access to the processed data and automation of data processing. The original
-                                specifications for my task was just to create the processing automation script. I chose to create a full-scale
-                                application that made the processed data accessible to the whole group (and anyone else who uses the application).<br><br>
-
-                                I also ensured that the code remained heavily documented and easily scalable such that IRIS can provide more views
-                                for the data that Group 389G researches. You can read the usage and development guide I created for IRIS <a href=files/IRISManual.pdf>here</a>.
-                            </p>
+                            <div class="split">
+                                <div class="column">
+                                    <p>
+                                        This past summer, I had the opportunity to work as an intern for NASA JPL's Group 389G, the <a href=https://microdevices.jpl.nasa.gov/news/news-infrared-detector.php>Infrared Photonics Group</a>. 
+                                        Their task for me was to create a script to handle data processing of current-voltage curves, information that would be used to quanitfy the quality of their proprietary infrared photodetectors. 
+                                        I instead opted to make IRIS (Infrared Informatics Software), a full-scale desktop application designed to create maximum abstraction between the code and the researcher.<br>
+                                        
+                                        <h2>Description</h2>
+                                        IRIS is first and foremost a data analytics application. 
+                                        Two-thirds of the UI is a graphing widget that is designed to depict the processed data elegantly and clearly. 
+                                        The graphing widget also allows precise zoomin and traversal. 
+                                        IRIS takes in selected raw data files that depict the <a href=https://en.wikipedia.org/wiki/Dark_current_(physics)>dark current</a> response oftested photodetectors at near absolute zero temperatures and between operating voltages of -1.5 and +1.5 Volts.
+                                        The user then has the option to filter the data according to user-defined values. 
+                                        Once the "Generate Analysis" button is clicked, the data will be processed within one to two seconds and plotted to the graphing widget. 
+                                        There are 3 buttons and a photodetector selection list to allow the user to select what plot type, temperature, and voltage to view the processed IV data of the selected devices. 
+                                        There are 10 plot types that each uniquely process the raw data. 
+                                        The user can quickly traverse plot types at the click of a button. 
+                                        All of the plots can be downloaded as formatted CSV files.<br>
+                                    </p>
+                                </div>
+                                <div class="column">
+                                    <p>
+                                        <div class="asset">
+                                            <embed src="files/jpl_pres.pdf" width="435" height="250"/>
+                                            <div class="caption">Project Final Presentation<br><br></div>
+                                        </div>
+                                        <div class="asset">
+                                            <a href=files/IRISManual.pdf><div class="caption">IRIS User and Dev Manual</a></div>
+                                        </div>
+                                        <div class="asset">
+                                            <p>*Due to JPL's International Traffic in Arms Regulations, I am forbidden from publishing my source code to the public domain. However,
+                                                I have provided a detailed breakdown of every function and object I implement in IRIS in the User and Dev Manual.
+                                            </p>
+                                        </div>
+                                    </p>
+                                </div>
                             </div>
                             <div class="column">
-                            <p></p>
+                                <p>
+                                    <h2>Accomplishments</h2>
+                                    Prior to my arrival, 389G faced the dilemma of having to spend laborous time curating and processing data files
+                                    with a closed-source data analytics platform. The group was only allowed one license to this application, so curating
+                                    was primarily my mentor's job. 
+                                    Thus, IRIS was designed to allow group-wide access to the processed data and automation of data processing. The original
+                                    specifications for my task was just to create the processing automation script. I chose to create a full-scale
+                                    application that made the processed data accessible to the whole group (and anyone else who uses the application).<br><br>
+
+                                    With just about 1500 lines of code, IRIS remains heavily documented and easily scalable such that it can provide more views
+                                    for the data that Group 389G researches. You can read the usage and development guide I created for IRIS <a href=files/IRISManual.pdf>here</a>.
+                                </p>
                             </div>
                         </div>
-                        </div>
+                    </div>
                 
-                        <div id="lyreq" class="proj">
+                    <div id="lyreq" class="proj">
                         <button class="collapsible">LyReq: Your Favorite Song Visualized<span class="plus">[+]</span></button>
                         <div class="content">
                             <div class="column">
@@ -76,32 +94,61 @@
                             </p>
                             </div>
                             <div class="column">
-                            <p>Other stuff</p>
+                            <p></p>
                             </div>
                         </div>
-                        </div>
+                    </div>
                 
-                        <div id="cpu" class="proj">
-                        <button class="collapsible">Designing a 5-Stage Pipelined CPU<span class="plus">[+]</span></button>
+                    <div id="cpu" class="proj">
+                        <button class="collapsible">Designing a 2-Stage Pipelined CPU<span class="plus">[+]</span></button>
                         <div class="content">
-                            <div class="column">
-                            <p>
-                                I took my Intro to Computer Architecture course in Spring 2018. The main design assignment was to design a single-core, 5-stage pipelined CPU that runs
-                                <a href=https://en.wikipedia.org/wiki/RISC-V>RISC-V</a> 32-bit architecture on Logisim, an app for circuit design. The 
-                                skeleton code only came with a harness to test the CPU, so the final design of the device was completely up to each student's discretion. Project success 
-                                was determined by how may unqiue instructions the CPU correctly processed and executed.
+                            <div class="split">
+                                <div class="column">
+                                    <p>
+                                        I took my Intro to Computer Architecture course in Spring 2018. The main design assignment was to design a single-core, 2-stage pipelined CPU that runs
+                                        <a href=https://en.wikipedia.org/wiki/RISC-V>RISC-V</a> 32-bit architecture on Logisim, an app for circuit design. The 
+                                        skeleton code only came with a harness to test the CPU, so the final design of the device was completely up to each student's discretion. Project success 
+                                        was determined by how may unqiue instructions the CPU correctly processed and executed.
 
-                                <h2>Description</h2>
-
-                            </p>
+                                        <h2>Description</h2>
+                                        RISC (Reduced Instruction Set Computer) was an instruction set architecture concept that was developed at UC Berkeley. Designed to minimize the number
+                                        of cycles per instruction, RISC-V encompasses about 100 unique instructions. For my project, I was expected implement about 30 of these instructions in a 
+                                        32-bit format (since the full RISC-V ISA is designed for 64-bit instructions). Additionally, my CPU was expected to read and write from 10 distinct registers
+                                        and a RAM unit.
+                                    </p>
+                                </div>
+                                <div class="column">
+                                    <p><a href=img/cpu.png><img src="img/cpu.png" width="435" height="250"></a>
+                                        <div class="caption">Overview of CPU, designed in Logisim<br><a href=https://github.com/DrehanM/CPU>GitHub Repo</a></div>
+                                    </p>
+                                </div>
                             </div>
                             <div class="column">
-                            <p>Other stuff</p>
+                                <p>
+                                    My design ultimately followed the typical 5-stage protocol for the RISC CPU. The order of execution was as follows:
+                                    <li>Instruction Fetch (to retrive the next instruction on the stack)</li>
+                                    <li>Instruction Decode (to retrieve read/write and execution information)</li> 
+                                    <li>Execution (to perform the appropriate mathematical function, if applicable)</li>
+                                    <li>Memory Access (to read/write from memory, if applicable)</li>
+                                    <li>Write Back (to update the state of the registers and/or stack)</li><br>
+                                    To ease the flow of logic within each step of processing, I created subcircuits to perform subtasks (i.e. an immediate decoder, sign extender, branch comparator, etc.).
+                                    Keeping track of the retrieved information during execution is a Control circuit, responsible for keeping track of read/write information, stack updates, ALU operation selection,
+                                    branching modes, and current instruction metadata.<br><br>
+                                    The 2-stage separation for pipelining the CPU is implemented between Instruction Fetch and Instruction Decode. This is done to double the throughput of instructions executed. 
+                                    Successful implementation of the pipeline is heavily dependent on the precise coordination of the updating of the program counter (PC), since a "jump" would render the 
+                                    next instruction void. If this happens, my implementation zeroes out the next instruction to prevent updating to an invalid state.
+
+                                    <h2>Accomplishments</h2>
+                                    Upon assignment of the project, it was stated that pipelining the CPU would be considered for extra credit. Students were advised to hold off on implementing a 2-stage pipeline until
+                                    their CPUs were perfectly function as a single-stage. I decided to outline a schematic by hand for the CPU with a pipeline in order to ease the transformation of the single-stage CPU
+                                    to a 2-stage CPU. Ultimately, this extra step of planning rewarded me with an extremely quick implementation of the 2-stage CPU since I had designed my single-stage CPU to be as resilient
+                                    to change as possible.
+                                </p>
                             </div>
                         </div>
-                        </div>
+                    </div>
                 
-                        <div id="gitlet" class="proj">
+                    <div id="gitlet" class="proj">
                         <button class="collapsible">Unpacking Git Version Control with Gitlet<span class="plus">[+]</span></button>
                         <div class="content">
                             <div class="column">
@@ -110,49 +157,65 @@
                                 Git's commands and functionality. The entire project was developed in Java from scratch.
 
                                 <h2>Description</h2>
-
-                            </p>
-                            </div>
-                            <div class="column">
-                            <p>Other stuff</p>
-                            </div>
-                        </div>
-                        </div>
-                
-                        <div id="rom" class="proj">
-                        <button class="collapsible">Occupancy Monitoring for Less<span class="plus">[+]</span></button>
-                        <div class="content">
-                            <div class="column">
-                            <p>
-                                During the summer of 2017, I was accepted into a research internship program in the <a href=https://www.comnets.uni-bremen.de/start/>ComNets</a> group at the University of Bremen in Germany.
-                                Here, I had the task of creating a device that could monitor the number of people in a room and report this data to a server where the information
-                                could be accessed remotely and by any individuals on the same network. Using an Arduino Nano with an ESP266 WiFi module, some infrared sensors, and bit of Python
-                                networking, I created the Room Occupancy Monitor (ROM for short).
-
-                                <h2>Description</h2>
-                                ROM is physcially constructed with a Pretzel Board, a device that combines Arduino Nano hardware with the ESP266 WiFi attachment. It is about 4 inches
-                                in length. Attached to the board are two line-of-sight infrared signal transmitter/receivers that outputs a signal based on the intensity of the infrared
-                                reflected back to the device. The programming of the device was completed in the Arduino IDE. The general logic is as follows:<br><br>
-                                <b>Setup:</b><br> <li>Calibrate the intensity of the reflected signal for the two infrared sensors. This will be the baseline signal. Any spike in value denotes that a
-                                person has passed line-of-sight, triggering an increase in reflection. The spike must be significant to register an "entry" or "exit".</li>
-                                <li> Establish the connection to the LAN in order to communicate with the host server that contains the Python socket script.</li><br>
-                                <b>Mainloop:</b><br>
-                                <li>Both sensors are attached to the doorway, one inside the room and one outside. Depending on which sensor is tripped first, the device will
-                                    log an "entry" or "exit".</li>
-                                <li>Every five seconds, report the current occupancy of the room to the Python socket over UDP connection.</li><br>
+                                Gitlet is a command line tool. To call the program, the syntax is very similar to Git (i.e. type "gitlet.Main" instead of git to precede the desired command).
+                                Gitlet is designed to interact with plain text files, although it can be configured to handle all file types if desired (this was done to prevent it from deleting
+                                code files during development). Gitlet can perform the following commands Git commands: init, add, commit, status, log, branch, checkout, reset, merge, find, rm, rm-branch.
+                                Gitlet also implements a "global-log" command, to view all commits regardless of which branch the HEAD is currently on. Like Git, Gitlet stores commited text files as serialized
+                                (compressed) files in a hidden folder called ".gitlet".
 
                                 <h2>Accomplishments</h2>
-                                Most occupancy monitors on the commerical market are priced well over $150. ROM costs just $30 in total hardware cost.
-                                I built ROM with the intention to minimize cost and complexity. In fact, the hardware for the device is composed of the Pretzel Board, two infrared sensors,
-                                and two resistors for the sensors. Despite this, the device works up to specifications, accurately reporting occupancy of the room it is placed in.
+                                My approach to creating Gitlet involved taking advantage of Java's object-oriented nature. Each command is implemented as its own class (extending a general Command object).
+                                This way, whenever the program is called, execution flows through only the called command code file.
                             </p>
                             </div>
-                            <div class="column">
-                            <p>Other stuff</p>
-                            </div>
+                            <!-- <div class="column">
+                            <p></p>
+                            </div> -->
                         </div>
+                    </div>
+                
+                    <div id="rom" class="proj">
+                        <button class="collapsible">Occupancy Monitoring for Less<span class="plus">[+]</span></button>
+                        <div class="content">
+                            <div class="split">
+                                <div class="column">
+                                <p>
+                                    During the summer of 2017, I was accepted into a research internship program in the <a href=https://www.comnets.uni-bremen.de/start>ComNets</a> group at the University of Bremen in Germany.
+                                    Here, I had the task of creating a device that could monitor the number of people in a room and report this data to a server where the information
+                                    could be accessed remotely and by any individuals on the same network. Using an Arduino Nano with an ESP266 WiFi module, some infrared sensors, and bit of Python
+                                    networking, I created the Room Occupancy Monitor (ROM for short).
+
+                                    <h2>Description</h2>
+                                    ROM is physcially constructed with a Pretzel Board, a device that combines Arduino Nano hardware with the ESP266 WiFi attachment. It is about 4 inches
+                                    in length. Attached to the board are two line-of-sight infrared signal transmitter/receivers that outputs a signal based on the intensity of the infrared
+                                    reflected back to the device. The programming of the device was completed in the Arduino IDE. The general logic is as follows:
+                                </p>
+                                </div>
+                                <div class="column">
+                                    <p>
+                                        <video width="435" height="250" controls><source src="files/rom.mp4" type="video/mp4"></video>
+                                            <div class="caption">Project Recap of ROM<br><a href=https://github.com/DrehanM/ROM>GitHub Repo</a></div>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                    <b>Setup:</b><br> 
+                                    <li>Calibrate the intensity of the reflected signal for the two infrared sensors. This will be the baseline signal. Any spike in value denotes that a
+                                    person has passed line-of-sight, triggering an increase in reflection. The spike must be significant to register an "entry" or "exit".</li>
+                                    <li> Establish the connection to the LAN in order to communicate with the host server that contains the Python socket script.</li><br>
+                                    <b>Mainloop:</b><br>
+                                    <li>Both sensors are attached to the doorway, one inside the room and one outside. Depending on which sensor is tripped first, the device will
+                                        log an "entry" or "exit".</li>
+                                    <li>Every five seconds, report the current occupancy of the room to the Python socket over UDP connection.</li><br>
+
+                                    <h2>Accomplishments</h2>
+                                    Most occupancy monitors on the commerical market are priced well over $150. ROM costs just $30 in total hardware cost.
+                                    I built ROM with the intention to minimize cost and complexity. In fact, the hardware for the device is composed of the Pretzel Board, two infrared sensors,
+                                    and two resistors for the sensors. Despite this, the device works up to specifications, accurately reporting occupancy of the room it is placed in.
+                            </div>
+                    </div>
                 </div>
-                </div>
+            </div>
         </div>
     </body>
 
